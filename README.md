@@ -10,7 +10,9 @@ A simple webpage that displays a person's age on other planets.
 
 ## Specs
 
-| Behavior: Program accepts user's age | Input: User's age | Output: UI to js logic |
+| Behavior: Program accepts user input | Input: User's age: 1, Life Expaectancy: 1| Output: User's age: 1, Life Expaectancy: 1 |
+
+| Behavior: Returns user's age in Earth years | Input: User's age | Output: their age (a) displayed |
 
 | Behavior: Returns user's age in Mercury years | Input: User's age | Output: their age (a) * .24 displayed |
 

@@ -3,12 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const { definitions } = new Dotenv();
 
 module.exports = {
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist', './env')
   },
   devtool: 'eval-source-map',
   devServer: {
@@ -33,7 +34,7 @@ module.exports = {
           'css-loader'
         ]
       },
-      {              
+      {
         test: /\.js$/,
         exclude: [
           /node_modules/,

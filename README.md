@@ -14,6 +14,8 @@ A simple webpage that displays a person's age on other planets.
 
 | Behavior: Returns user's age in Earth years | Input: User's age | Output: their age (a) displayed |
 
+| Behavior: Returns user's Earthly life expectancy | Input: User's life expectancy | Output: their life expectancy displayed |
+
 | Behavior: Returns user's age in Mercury years | Input: User's age | Output: their age (a) * .24 displayed |
 
 | Behavior: Returns user's age in Venus | Input: User's age | Output: their age (a) * .62 displayed |
@@ -33,6 +35,7 @@ A simple webpage that displays a person's age on other planets.
 
 |----------|-------|--------|
 | Behavior | input | output |
+
 
 ## Setup on OSX
 

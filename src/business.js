@@ -1,15 +1,25 @@
-import { newUserAge } from "./main.js";
-import { userLifeExpectancy } from "./main.js";
-export { mercuryAge };
 
-// export class userInput {
-//   constructor(userAge, userLifeExpectancy) {
-//     this.userAge = userAge;
-//     this.userLifeExpectancy = userLifeExpectancy;
-//   }
-// }
+export default class PlanetaryAgeCalculator {
+  constructor(userAge, userLifeExpectancy) {
+    this.userAge = userAge;
+    this.userLifeExpectancy = userLifeExpectancy;
+  }
 
-const mercuryAge = (newUserAge * 0.24);
-// const venusAge = (userAge * 0.62);
-// const marsAge = (userAge * 0.62);
-// const jupiterAge = (userAge * 0.62);
+  mercuryAge() {
+    return this.userAge * 0.24;
+  }
+
+  venusAge() {
+    return this.userAge * 0.62;
+  }
+
+  marsAge() {
+    return this.userAge * 1.88;
+  }
+
+  jupiterAge() {
+    return this.userAge * 11.86;
+  }
+
+
+}

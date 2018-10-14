@@ -5,20 +5,36 @@ export default class PlanetaryAgeCalculator {
     this.userLifeExpectancy = userLifeExpectancy;
   }
 
-  mercuryAge() {
+  mercuryYears() {
     return this.userAge * 0.24;
   }
 
-  venusAge() {
+  mercuryLifeExpectancy() {
+    return this.userLifeExpectancy * 0.24;
+  }
+
+  venusYears() {
     return this.userAge * 0.62;
   }
 
-  marsAge() {
+  venusLifeExpectancy() {
+    return this.userLifeExpectancy * 0.62;
+  }
+
+  marsYears() {
     return this.userAge * 1.88;
   }
 
-  jupiterAge() {
+  marsLifeExpectancy() {
+    return this.userLifeExpectancy * 1.88;
+  }
+
+  jupiterYears() {
     return this.userAge * 11.86;
+  }
+
+  jupiterLifeExpectancy() {
+    return this.userLifeExpectancy * 11.86;
   }
 
 

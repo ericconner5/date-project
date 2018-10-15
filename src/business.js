@@ -5,6 +5,20 @@ export default class PlanetaryAgeCalculator {
     this.userLifeExpectancy = userLifeExpectancy;
   }
 
+  earthYears() {
+    return this.userAge;
+  }
+
+  earthLifeExpectancy() {
+    if (this.userAge < this.userLifeExpectancy) {
+      return this.userLifeExpectancy - this.userAge;
+    } else {
+      return 'You are ' + (this.userAge - this.userLifeExpectancy) + ' years over your life expectancy!';
+    }
+
+
+  }
+
   mercuryYears() {
     return this.userAge * 0.24;
   }
@@ -37,12 +51,13 @@ export default class PlanetaryAgeCalculator {
     return this.userLifeExpectancy * 11.86;
   }
 
-  earthLifeExpectancy() {
-    if (this.userAge < this.userLifeExpectancy) {
-      return this.userLifeExpectancy - this.userAge;
-    } else {
-      return this.userAge - this.userLifeExpectancy;
-    }
-  }
+
+  // earthOverLifeExpectancy() {
+  //   if (this.userAge < this.userLifeExpectancy) {
+  //     return this.userLifeExpectancy - this.userAge;
+  //   } else {
+  //     return this.userAge - this.userLifeExpectancy;
+  //   }
+  // }
 
 }

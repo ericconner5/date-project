@@ -69,11 +69,16 @@ describe('PlanetaryAgeCalculator', function() {
     expect(planetaryAgeCalculator.earthLifeExpectancy()).toBe(3)
   })
 
-  it('should return the difference of expected life span and their user age for user age greater than average life span', function() {
+//this following test worked to get the method in place but no longer works with the added message
+  xit('should return the difference of expected life span and their user age for user age greater than average life span', function() {
     const planetaryAgeCalculator = new PlanetaryAgeCalculator(4, 1);
     expect(planetaryAgeCalculator.earthLifeExpectancy()).toEqual(3)
   })
 
+  it('should return the earthly over expected life expectancy number instead of a negative number', function() {
+    const planetaryAgeCalculator = new PlanetaryAgeCalculator(4, 1);
+    expect(planetaryAgeCalculator.earthLifeExpectancy()).toEqual("You are 3 years over your life expectancy!")
+  })
 
 
 

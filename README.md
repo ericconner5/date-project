@@ -1,12 +1,12 @@
 # Planetary Age Checker
 
-#### Epicodus JavaScript exercise, Date 5 Oct 2018
+#### An Epicodus JavaScript, Jasmine/Karma, Webpack Exercise, Date 5 Oct 2018
 
 #### By Eric Conner
 
 ## Description
 
-A simple webpage that displays a person's age on other planets.
+A simple webpage that displays a person's age and life expectancy on other planets. 
 
 ## Specs
 
@@ -24,7 +24,6 @@ A simple webpage that displays a person's age on other planets.
 
 | Behavior: Returns user's age in Jupiter years | Input: User's age | Output: their age (a) * 11.86 displayed |
 
-
 | Behavior: Returns user's expected years to live in Mercury years | Input: User's life expectancy | Output: their life expectancy (e) * .24 - current age (c) displayed |
 
 | Behavior: Returns user's expected years to live in Venus | Input: User's life expectancy | Output: their life expectancy (e) * .62 - current age (c) displayed |
@@ -33,14 +32,15 @@ A simple webpage that displays a person's age on other planets.
 
 | Behavior: Returns user's expected years to live in Jupiter years | Input: User's life expectancy | Output: their life expectancy (e) * 11.86 - current age (c) displayed |
 
-|----------|-------|--------|
-| Behavior | input | output |
+| Behavior: Returns user's the difference of user's age and their expected life span if user age is less than average life span | Input: 1 year old, expected life span at 4 years | Output: Your Remaining Years to Live on Earth: 3|
+
+| Behavior: Returns the remaining years to live as years lived over the expected life span if the user age is greater than the average life span | Input: 4 years old, expected life span is 1 year | Output: You are 3 years over your life expectancy! |
 
 
 ## Setup on OSX
 
 * Clone Planetary Age Checker repo
-* Install npm dependencies
+* Install npm dependencies by running npm install
 * Open index.html in a web browser (Chrome Preferred)
 
 ## Technologies Used
@@ -57,7 +57,7 @@ A simple webpage that displays a person's age on other planets.
 
 ## Links
 
-* Add links here
+Any time, day or night, for any reason, question, answer or concern, contact me here: theluvq@gmail.com
 
 ## License
 

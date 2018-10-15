@@ -37,5 +37,12 @@ export default class PlanetaryAgeCalculator {
     return this.userLifeExpectancy * 11.86;
   }
 
+  earthLifeExpectancy() {
+    if (this.userAge < this.userLifeExpectancy) {
+      return this.userLifeExpectancy - this.userAge;
+    } else {
+      return this.userAge - this.userLifeExpectancy;
+    }
+  }
 
 }

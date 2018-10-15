@@ -64,7 +64,15 @@ describe('PlanetaryAgeCalculator', function() {
     expect(planetaryAgeCalculator.jupiterLifeExpectancy()).toEqual(23.72)
   });
 
+  it('should return the difference of user age and their expected life span for user age not greater than average life span', function() {
+    const planetaryAgeCalculator = new PlanetaryAgeCalculator(1, 4);
+    expect(planetaryAgeCalculator.earthLifeExpectancy()).toBe(3)
+  })
 
+  it('should return the difference of expected life span and their user age for user age greater than average life span', function() {
+    const planetaryAgeCalculator = new PlanetaryAgeCalculator(4, 1);
+    expect(planetaryAgeCalculator.earthLifeExpectancy()).toEqual(3)
+  })
 
 
 

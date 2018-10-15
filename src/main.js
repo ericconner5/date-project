@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     $('#result').append('<li>Your Earth Age: ' + userAge + '</li>');
     $('#result').append('<li>Your Earthly Life Expectancy: ' + userLifeExpectancy + '</li>');
-    $('#result').append('<li> Your Mercury Age: ' + planetaryAgeCalculator.mercuryAge() + '</li>');
+    $('#result').append('<li> Your Mercury Age: ' + planetaryAgeCalculator.mercuryYears() + '</li>');
 
   });
 });
